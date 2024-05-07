@@ -101,12 +101,6 @@ bool Fecha::fechaValida()
 	return ( dia <= diaEnMes[mes - 1] );
 }
 
-
-void SetMes (const int& m);
-void SetDia (const int& d);
-void SetHora (const int& h);
-void SetMinuto (const int& m);
-
 std::ostream& operator<< (std::ostream& os, const Fecha& f)
 {
 	os << std::setw(4) << std::setfill('0') << f.GetAnio() << "-" << std::setw(2) << std::setfill('0') << f.GetMes() << "-" << std::setw(2) << std::setfill('0') << f.GetDia()
