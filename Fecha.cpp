@@ -109,7 +109,7 @@ void SetMinuto (const int& m);
 
 std::ostream& operator<< (std::ostream& os, const Fecha& f)
 {
-	os << f.GetAnio() << "-" << std::setw(2) << std::setfill('0') << f.GetMes() << "-" << std::setw(2) << std::setfill('0') << f.GetDia()
+	os << std::setw(4) << std::setfill('0') << f.GetAnio() << "-" << std::setw(2) << std::setfill('0') << f.GetMes() << "-" << std::setw(2) << std::setfill('0') << f.GetDia()
 	<< "-" << std::setw(2) << std::setfill('0') << f.GetHora() << "-" << std::setw(2) << std::setfill('0') << f.GetMin() ;
 	return os;
 }
