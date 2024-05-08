@@ -1,0 +1,18 @@
+Para hacer
+Tiempo:
+  Standar Exception What 
+    · Crear exception estandars para el error de fecha erronea
+    · Crear exception estandars para la lectura de fechas
+  Sobre carga >>
+    · Validar los datos leidos para respetar el formato
+  Sobrecarga de operadores para sort
+    · Todos
+DatClima:
+  Standar Exception What
+    · Crear exepciones para la lectura, formato incorrecto
+    · Constructor con valores ya dados
+  Sobre carga de operadores para sort
+    · Todos
+EstacionMeteo:
+
+Menu:
