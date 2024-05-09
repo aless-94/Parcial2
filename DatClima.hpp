@@ -8,8 +8,6 @@
 #ifndef DATCLIMA_HPP_
 #define DATCLIMA_HPP_
 #include <iostream>
-#include <sstream>
-#include <string>
 #include <fstream>
 #include <vector>
 #include "Fecha.hpp"
@@ -25,8 +23,8 @@ private:
 	float humedadRela ;
 	float mmH20;
 public:
-	DatClima ();
-	DatClima(const int& a, const int& m , const int& d);
+	DatClima ():fecha(), veloViento(0),temp(0), humedadRela(0), mmH20(0) {};
+	DatClima(const Fecha& f, const float& v, const float& t, const float& h, const float& mm):fecha(f), veloViento(v), temp(t), humedadRela(h), mmH20(mm) {};
 
 	Fecha GetFecha() const { return fecha; }
 	float GetTemp() const { return temp; }
@@ -44,3 +42,10 @@ public:
 
 std::ostream& operator<< (std::ostream& os , const DatClima& d);
 std::istream& operator>> (std::istream& is , DatClima& d);
+
+
+
+
+
+
+#endif /* DATCLIMA_HPP_ */
