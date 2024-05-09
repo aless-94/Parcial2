@@ -9,8 +9,8 @@
 Fecha::Fecha()
 {
 	anio = 0;
-	mes = 0;
-	dia = 0;
+	mes = 1;
+	dia = 1;
 	hora = 0;
 	min = 0;
 }
@@ -113,11 +113,11 @@ std::istream& operator>> (std::istream& is, Fecha& f)
 	char delimit;
 	int anio, mes, dia, hora, min;
 
+	//validar
 	is >> anio >> delimit >> mes >> delimit >> dia >> delimit >> hora >> delimit >> min;
 
 	f.SetFecha(anio, mes, dia, hora, min);
 
 	return is;
 }
-
 
