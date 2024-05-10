@@ -6,14 +6,6 @@
  */
 #include "Fecha.hpp"
 
-Fecha::Fecha()
-{
-	anio = 0;
-	mes = 1;
-	dia = 1;
-	hora = 0;
-	min = 0;
-}
 Fecha::Fecha(const int& a, const int& m, const int& d, const int& h, const int& mi)
 {
 	anio = a;

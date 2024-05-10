@@ -22,7 +22,7 @@ private:
 
 	bool fechaValida();
 public:
-	Fecha();
+	Fecha(): anio(0), mes(0), dia(0), hora(0), min(0) {};
 	Fecha(const int& a, const int& m, const int& d, const int& h, const int& mi);
 
 	int GetAnio () const { return anio; }
