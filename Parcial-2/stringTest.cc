@@ -32,7 +32,7 @@ int main()
 {
 	try{
 	DatClima c;
-	std::cout << "Ingrese [anio-mes-dia-hora-minuto-velo-temp-humedad-h20]: ";
+	std::cout << "Ingresweee [anio-mes-dia-hora-minuto-velo-temp-humedad-h20]: ";
 	std::cin >> c;
 	std::cout << c << std::endl;
 	}catch (int e)
